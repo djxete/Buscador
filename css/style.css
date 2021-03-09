@@ -1,0 +1,56 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    flex-direction: row;
+    align-items: center;
+    background-color: #b63cf3;
+    overflow: hidden;
+    margin: 0;
+}
+
+.search{
+    height: 50px;
+    position: relative;
+}
+
+.input{
+    padding: 5px;
+    border: none;
+    font-size: 18px;
+    height: 50px;
+    transition: width 0.3s ease;
+    outline: none;
+    position: relative;
+    width: 50px;
+    
+}
+
+
+.btn{
+    border: none;
+    padding: 5px;
+    height: 50px;
+    width: 50px;
+    font-size: 18px;
+    outline: none;
+    position: absolute;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    top:0;
+    left:0;
+    
+}
+
+.search.active .input{
+    width: 200px;
+} 
+
+.search.active .btn{
+    transform: translateX(198px);
+}
